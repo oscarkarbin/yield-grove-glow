@@ -48,7 +48,7 @@ const Hero = () => {
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content Side */}
-          <div className="space-y-8">
+          <div className="space-y-8 py-4">
             {/* Logo/Brand */}
             <div className="space-y-4">
               <div className="text-5xl md:text-7xl font-digital font-bold bg-gradient-hero bg-clip-text text-transparent">
@@ -57,18 +57,18 @@ const Hero = () => {
               <div className="w-16 h-1 bg-gradient-hero rounded-full"></div>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-charcoal-black">
-              <span className={`transition-all duration-500 ${isTransitioning ? 'opacity-70' : 'opacity-100'}`}>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-relaxed text-charcoal-black pb-2">
+              <span className={`block transition-all duration-500 ${isTransitioning ? 'opacity-70' : 'opacity-100'}`}>
                 Data Intelligence for
               </span>
-              <span className={`block bg-gradient-hero bg-clip-text text-transparent mt-2 transition-all duration-500 ${
+              <span className={`block bg-gradient-hero bg-clip-text text-transparent mt-3 pb-1 transition-all duration-500 ${
                 isTransitioning ? 'opacity-70 transform translate-y-1' : 'opacity-100 transform translate-y-0'
               }`}>
                 {heroImages[currentImageIndex].title}
               </span>
             </h1>
             
-            <p className={`text-lg md:text-xl text-slate-grey leading-relaxed max-w-lg transition-all duration-500 ${
+            <p className={`text-lg md:text-xl text-slate-grey leading-relaxed max-w-lg py-2 transition-all duration-500 ${
               isTransitioning ? 'opacity-70' : 'opacity-100'
             }`}>
               {heroImages[currentImageIndex].subtitle} through our advanced analytics platform, 
