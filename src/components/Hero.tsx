@@ -8,14 +8,6 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content Side */}
           <div className="space-y-8 py-4">
-            {/* Logo/Brand */}
-            <div className="space-y-4">
-              <div className="text-5xl md:text-7xl font-digital font-bold bg-gradient-hero bg-clip-text text-transparent">
-                Yield
-              </div>
-              <div className="w-16 h-1 bg-gradient-hero rounded-full"></div>
-            </div>
-            
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-relaxed text-charcoal-black pb-2">
               <span className="block">
                 Data Intelligence for
