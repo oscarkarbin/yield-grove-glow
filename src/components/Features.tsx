@@ -71,10 +71,10 @@ const Features = () => {
   ];
 
   return (
-    <section className="py-20 bg-light-grey/50">
+    <section className="py-20 bg-silver-birch/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-dark-grey">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-swedish-charcoal">
             Powerful Features for 
             <span className="text-primary"> Modern Agriculture</span>
           </h2>
@@ -91,7 +91,7 @@ const Features = () => {
                 <div className="flex justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                   {feature.icon}
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-dark-grey">
+                <h3 className="text-xl font-bold mb-4 text-swedish-charcoal">
                   {feature.title}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">

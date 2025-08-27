@@ -57,10 +57,15 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				'dark-grey': 'hsl(var(--dark-grey))',
-				'light-grey': 'hsl(var(--light-grey))',
-				'warm-orange': 'hsl(var(--warm-orange))',
-				'soft-orange': 'hsl(var(--soft-orange))',
+				'nordic-forest': 'hsl(var(--nordic-forest))',
+				'arctic-blue': 'hsl(var(--arctic-blue))',
+				'stone-grey': 'hsl(var(--stone-grey))',
+				'pine-green': 'hsl(var(--pine-green))',
+				'ice-blue': 'hsl(var(--ice-blue))',
+				'silver-birch': 'hsl(var(--silver-birch))',
+				'aurora-mint': 'hsl(var(--aurora-mint))',
+				'frost-white': 'hsl(var(--frost-white))',
+				'swedish-charcoal': 'hsl(var(--swedish-charcoal))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -75,7 +80,9 @@ export default {
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-hero': 'var(--gradient-hero)',
-				'gradient-card': 'var(--gradient-card)'
+				'gradient-card': 'var(--gradient-card)',
+				'gradient-forest': 'var(--gradient-forest)',
+				'gradient-arctic': 'var(--gradient-arctic)'
 			},
 			boxShadow: {
 				'soft': 'var(--shadow-soft)',

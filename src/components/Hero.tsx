@@ -3,12 +3,12 @@ import heroImage from "@/assets/hero-agriculture.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background to-light-grey/30">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background to-silver-birch/30">
       {/* Geometric Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-hero rounded-full opacity-10 animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-primary-glow rounded-full opacity-15 animate-pulse" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-1/2 right-1/3 w-32 h-32 bg-gradient-hero rounded-full opacity-20 animate-pulse" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-forest rounded-full opacity-10 animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-aurora-mint rounded-full opacity-15 animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/2 right-1/3 w-32 h-32 bg-gradient-arctic rounded-full opacity-20 animate-pulse" style={{ animationDelay: '2s' }}></div>
       </div>
       
       {/* Grid Pattern */}
@@ -31,7 +31,7 @@ const Hero = () => {
             <div className="w-24 h-1 bg-gradient-hero mx-auto rounded-full"></div>
           </div>
           
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-dark-grey">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-swedish-charcoal">
             Data Intelligence for
             <span className="block bg-gradient-hero bg-clip-text text-transparent mt-2">
               Agriculture & Forestry

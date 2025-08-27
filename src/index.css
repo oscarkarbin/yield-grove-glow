@@ -17,41 +17,47 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 210 11% 15%;
 
-    --primary: 24 95% 53%;
+    --primary: 155 65% 28%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 6% 93%;
-    --secondary-foreground: 210 11% 15%;
+    --secondary: 210 25% 85%;
+    --secondary-foreground: 155 65% 28%;
 
-    --muted: 210 6% 93%;
-    --muted-foreground: 210 7% 46%;
+    --muted: 210 15% 92%;
+    --muted-foreground: 210 10% 45%;
 
-    --accent: 24 95% 53%;
+    --accent: 200 85% 45%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 12% 82%;
-    --input: 210 12% 82%;
-    --ring: 24 95% 53%;
+    --border: 210 20% 80%;
+    --input: 210 20% 80%;
+    --ring: 155 65% 28%;
 
-    /* Custom design tokens */
-    --primary-glow: 24 100% 67%;
-    --dark-grey: 210 11% 15%;
-    --light-grey: 210 6% 93%;
-    --warm-orange: 24 95% 53%;
-    --soft-orange: 24 100% 67%;
+    /* Swedish Forest Design Tokens */
+    --nordic-forest: 155 65% 28%;
+    --arctic-blue: 200 85% 45%;
+    --stone-grey: 210 15% 55%;
+    --pine-green: 160 50% 35%;
+    --ice-blue: 195 75% 65%;
+    --silver-birch: 45 25% 88%;
+    --aurora-mint: 175 45% 75%;
+    --frost-white: 210 20% 98%;
+    --swedish-charcoal: 210 15% 25%;
     
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-glow)) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(210 6% 98%) 100%);
+    /* Nordic Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--nordic-forest)), hsl(var(--pine-green)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--nordic-forest)) 0%, hsl(var(--arctic-blue)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--frost-white)) 0%, hsl(var(--silver-birch)) 100%);
+    --gradient-forest: linear-gradient(180deg, hsl(var(--nordic-forest)) 0%, hsl(var(--pine-green)) 100%);
+    --gradient-arctic: linear-gradient(135deg, hsl(var(--arctic-blue)) 0%, hsl(var(--ice-blue)) 100%);
     
-    /* Shadows */
-    --shadow-soft: 0 4px 6px -1px hsl(var(--primary) / 0.1);
-    --shadow-medium: 0 10px 15px -3px hsl(var(--primary) / 0.1);
-    --shadow-large: 0 25px 50px -12px hsl(var(--primary) / 0.25);
+    /* Forest Shadows */
+    --shadow-soft: 0 4px 6px -1px hsl(var(--nordic-forest) / 0.15);
+    --shadow-medium: 0 10px 15px -3px hsl(var(--nordic-forest) / 0.2);
+    --shadow-large: 0 25px 50px -12px hsl(var(--nordic-forest) / 0.3);
 
     --radius: 0.5rem;
 
@@ -73,33 +79,33 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 210 25% 8%;
+    --foreground: 210 20% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 210 25% 8%;
+    --card-foreground: 210 20% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 210 25% 8%;
+    --popover-foreground: 210 20% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 175 45% 75%;
+    --primary-foreground: 210 25% 8%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 210 20% 15%;
+    --secondary-foreground: 210 20% 95%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 210 20% 15%;
+    --muted-foreground: 210 15% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 195 75% 65%;
+    --accent-foreground: 210 25% 8%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 210 20% 95%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 210 20% 20%;
+    --input: 210 20% 20%;
+    --ring: 175 45% 75%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
