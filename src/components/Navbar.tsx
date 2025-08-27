@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="text-2xl font-bold text-primary">
+            <div className="text-2xl font-bold text-primary font-digital">
               Yield
             </div>
           </div>
@@ -32,11 +32,8 @@ const Navbar = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:block">
-            <Button variant="outline" className="mr-3">
-              Sign In
-            </Button>
             <Button className="bg-gradient-hero hover:shadow-medium">
-              Get Started
+              Get in touch
             </Button>
           </div>
 
@@ -84,11 +81,8 @@ const Navbar = () => {
                 Contact
               </a>
               <div className="pt-2 border-t border-border">
-                <Button variant="outline" className="w-full mb-2">
-                  Sign In
-                </Button>
                 <Button className="w-full bg-gradient-hero">
-                  Get Started
+                  Get in touch
                 </Button>
               </div>
             </div>
