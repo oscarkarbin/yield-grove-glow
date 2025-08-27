@@ -9,55 +9,55 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 210 11% 15%;
+    --foreground: 220 15% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 210 11% 15%;
+    --card-foreground: 220 15% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 11% 15%;
+    --popover-foreground: 220 15% 15%;
 
-    --primary: 155 65% 28%;
+    --primary: 28 95% 60%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 25% 85%;
-    --secondary-foreground: 155 65% 28%;
+    --secondary: 220 15% 15%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 15% 92%;
-    --muted-foreground: 210 10% 45%;
+    --muted: 220 5% 95%;
+    --muted-foreground: 220 15% 30%;
 
-    --accent: 200 85% 45%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 28 100% 65%;
+    --accent-foreground: 220 15% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 20% 80%;
-    --input: 210 20% 80%;
-    --ring: 155 65% 28%;
+    --border: 220 10% 85%;
+    --input: 220 5% 95%;
+    --ring: 28 95% 60%;
 
-    /* Swedish Forest Design Tokens */
-    --nordic-forest: 155 65% 28%;
-    --arctic-blue: 200 85% 45%;
-    --stone-grey: 210 15% 55%;
-    --pine-green: 160 50% 35%;
-    --ice-blue: 195 75% 65%;
-    --silver-birch: 45 25% 88%;
-    --aurora-mint: 175 45% 75%;
-    --frost-white: 210 20% 98%;
-    --swedish-charcoal: 210 15% 25%;
+    /* Orange Design Tokens */
+    --vibrant-orange: 28 95% 60%;
+    --deep-orange: 20 88% 45%;
+    --charcoal-black: 220 15% 15%;
+    --slate-grey: 220 10% 25%;
+    --light-grey: 220 5% 95%;
+    --dark-grey: 220 15% 30%;
+    --orange-glow: 28 100% 65%;
+    --pure-white: 0 0% 100%;
+    --warm-orange: 25 90% 55%;
     
-    /* Nordic Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--nordic-forest)), hsl(var(--pine-green)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--nordic-forest)) 0%, hsl(var(--arctic-blue)) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(var(--frost-white)) 0%, hsl(var(--silver-birch)) 100%);
-    --gradient-forest: linear-gradient(180deg, hsl(var(--nordic-forest)) 0%, hsl(var(--pine-green)) 100%);
-    --gradient-arctic: linear-gradient(135deg, hsl(var(--arctic-blue)) 0%, hsl(var(--ice-blue)) 100%);
+    /* Orange Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--vibrant-orange)), hsl(var(--deep-orange)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--vibrant-orange)) 0%, hsl(var(--deep-orange)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--pure-white)) 0%, hsl(var(--light-grey)) 100%);
+    --gradient-orange: linear-gradient(135deg, hsl(var(--vibrant-orange)) 0%, hsl(var(--orange-glow)) 100%);
+    --gradient-dark: linear-gradient(135deg, hsl(var(--charcoal-black)) 0%, hsl(var(--slate-grey)) 100%);
     
-    /* Forest Shadows */
-    --shadow-soft: 0 4px 6px -1px hsl(var(--nordic-forest) / 0.15);
-    --shadow-medium: 0 10px 15px -3px hsl(var(--nordic-forest) / 0.2);
-    --shadow-large: 0 25px 50px -12px hsl(var(--nordic-forest) / 0.3);
+    /* Orange Shadows */
+    --shadow-soft: 0 4px 6px -1px hsl(var(--vibrant-orange) / 0.15);
+    --shadow-medium: 0 10px 15px -3px hsl(var(--vibrant-orange) / 0.2);
+    --shadow-large: 0 25px 50px -12px hsl(var(--vibrant-orange) / 0.3);
 
     --radius: 0.5rem;
 
@@ -79,33 +79,33 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 210 25% 8%;
-    --foreground: 210 20% 95%;
+    --background: 220 15% 8%;
+    --foreground: 0 0% 95%;
 
-    --card: 210 25% 8%;
-    --card-foreground: 210 20% 95%;
+    --card: 220 15% 10%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 210 25% 8%;
-    --popover-foreground: 210 20% 95%;
+    --popover: 220 15% 10%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 175 45% 75%;
-    --primary-foreground: 210 25% 8%;
+    --primary: 28 95% 60%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 20% 15%;
-    --secondary-foreground: 210 20% 95%;
+    --secondary: 220 5% 95%;
+    --secondary-foreground: 220 15% 15%;
 
-    --muted: 210 20% 15%;
-    --muted-foreground: 210 15% 65%;
+    --muted: 220 15% 15%;
+    --muted-foreground: 220 10% 70%;
 
-    --accent: 195 75% 65%;
-    --accent-foreground: 210 25% 8%;
+    --accent: 28 100% 65%;
+    --accent-foreground: 220 15% 15%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 20% 95%;
+    --destructive-foreground: 0 0% 95%;
 
-    --border: 210 20% 20%;
-    --input: 210 20% 20%;
-    --ring: 175 45% 75%;
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 28 95% 60%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

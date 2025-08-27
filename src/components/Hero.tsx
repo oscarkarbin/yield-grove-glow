@@ -3,85 +3,98 @@ import heroImage from "@/assets/hero-agriculture.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background to-silver-birch/30">
-      {/* Geometric Background Elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-forest rounded-full opacity-10 animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-aurora-mint rounded-full opacity-15 animate-pulse" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-1/2 right-1/3 w-32 h-32 bg-gradient-arctic rounded-full opacity-20 animate-pulse" style={{ animationDelay: '2s' }}></div>
-      </div>
-      
-      {/* Grid Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="grid grid-cols-12 gap-4 h-full w-full">
-          {Array.from({ length: 144 }).map((_, i) => (
-            <div key={i} className="border border-primary/10"></div>
-          ))}
-        </div>
-      </div>
-      
-      {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 text-center">
-        <div className="max-w-5xl mx-auto">
-          {/* Logo/Brand */}
-          <div className="mb-8">
-            <div className="text-6xl md:text-8xl font-digital font-bold bg-gradient-hero bg-clip-text text-transparent mb-4">
-              Yield
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-background">
+      <div className="container mx-auto px-6">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Content Side */}
+          <div className="space-y-8">
+            {/* Logo/Brand */}
+            <div className="space-y-4">
+              <div className="text-5xl md:text-7xl font-digital font-bold bg-gradient-hero bg-clip-text text-transparent">
+                Yield
+              </div>
+              <div className="w-16 h-1 bg-gradient-hero rounded-full"></div>
             </div>
-            <div className="w-24 h-1 bg-gradient-hero mx-auto rounded-full"></div>
+            
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-charcoal-black">
+              Data Intelligence for
+              <span className="block bg-gradient-hero bg-clip-text text-transparent mt-2">
+                Agriculture & Forestry
+              </span>
+            </h1>
+            
+            <p className="text-lg md:text-xl text-slate-grey leading-relaxed max-w-lg">
+              Advanced analytics platform that aggregates data from agricultural and forestry operations, 
+              delivering actionable insights for sustainable growth and maximum productivity.
+            </p>
+            
+            {/* Feature Icons */}
+            <div className="flex flex-wrap gap-6">
+              <div className="flex items-center gap-2 text-charcoal-black">
+                <div className="w-8 h-8 bg-gradient-hero rounded-lg flex items-center justify-center">
+                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                  </svg>
+                </div>
+                <span className="font-semibold">Real-time</span>
+              </div>
+              <div className="flex items-center gap-2 text-charcoal-black">
+                <div className="w-8 h-8 bg-gradient-hero rounded-lg flex items-center justify-center">
+                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                  </svg>
+                </div>
+                <span className="font-semibold">Predictive</span>
+              </div>
+              <div className="flex items-center gap-2 text-charcoal-black">
+                <div className="w-8 h-8 bg-gradient-hero rounded-lg flex items-center justify-center">
+                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s1.343-9 3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                  </svg>
+                </div>
+                <span className="font-semibold">Global Scale</span>
+              </div>
+            </div>
+            
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button size="lg" className="bg-gradient-hero hover:shadow-large transform hover:scale-105 transition-all duration-300 text-lg px-8 py-6 rounded-xl">
+                Get Started Today
+              </Button>
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="border-2 border-primary/30 text-charcoal-black hover:bg-primary/10 hover:border-primary backdrop-blur-sm text-lg px-8 py-6 rounded-xl"
+              >
+                Watch Demo
+              </Button>
+            </div>
           </div>
           
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-swedish-charcoal">
-            Data Intelligence for
-            <span className="block bg-gradient-hero bg-clip-text text-transparent mt-2">
-              Agriculture & Forestry
-            </span>
-          </h1>
-          
-          <p className="text-xl md:text-2xl mb-12 text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Advanced analytics platform that aggregates data from agricultural and forestry operations, 
-            delivering actionable insights for sustainable growth and maximum productivity.
-          </p>
-          
-          {/* Feature Icons */}
-          <div className="flex justify-center items-center gap-8 mb-12 flex-wrap">
-            <div className="flex items-center gap-2 text-primary">
-              <div className="w-8 h-8 bg-gradient-hero rounded-lg flex items-center justify-center">
-                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                </svg>
+          {/* Image Side */}
+          <div className="relative">
+            <div className="relative rounded-2xl overflow-hidden shadow-elegant">
+              <img 
+                src={heroImage} 
+                alt="Advanced agricultural data analytics and monitoring systems in action"
+                className="w-full h-[600px] object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-tr from-vibrant-orange/20 via-transparent to-deep-orange/10"></div>
+              
+              {/* Floating Stats Cards */}
+              <div className="absolute top-6 right-6 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg">
+                <div className="text-2xl font-bold text-vibrant-orange">25%</div>
+                <div className="text-sm text-charcoal-black">Yield Increase</div>
               </div>
-              <span className="font-semibold">Real-time</span>
-            </div>
-            <div className="flex items-center gap-2 text-primary">
-              <div className="w-8 h-8 bg-gradient-hero rounded-lg flex items-center justify-center">
-                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
-                </svg>
+              
+              <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg">
+                <div className="text-2xl font-bold text-vibrant-orange">10M+</div>
+                <div className="text-sm text-charcoal-black">Acres Monitored</div>
               </div>
-              <span className="font-semibold">Predictive</span>
             </div>
-            <div className="flex items-center gap-2 text-primary">
-              <div className="w-8 h-8 bg-gradient-hero rounded-lg flex items-center justify-center">
-                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9 3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
-                </svg>
-              </div>
-              <span className="font-semibold">Global Scale</span>
-            </div>
-          </div>
-          
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Button size="lg" className="bg-gradient-hero hover:shadow-large transform hover:scale-105 transition-all duration-300 text-lg px-10 py-6 rounded-xl">
-              Get Started Today
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="border-2 border-primary/20 text-primary hover:bg-primary/5 hover:border-primary/40 backdrop-blur-sm text-lg px-10 py-6 rounded-xl"
-            >
-              Watch Demo
-            </Button>
+            
+            {/* Orange accent elements */}
+            <div className="absolute -top-4 -right-4 w-32 h-32 bg-gradient-hero rounded-full opacity-20 blur-2xl"></div>
+            <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-gradient-orange rounded-full opacity-15 blur-3xl"></div>
           </div>
         </div>
       </div>

@@ -57,15 +57,15 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				'nordic-forest': 'hsl(var(--nordic-forest))',
-				'arctic-blue': 'hsl(var(--arctic-blue))',
-				'stone-grey': 'hsl(var(--stone-grey))',
-				'pine-green': 'hsl(var(--pine-green))',
-				'ice-blue': 'hsl(var(--ice-blue))',
-				'silver-birch': 'hsl(var(--silver-birch))',
-				'aurora-mint': 'hsl(var(--aurora-mint))',
-				'frost-white': 'hsl(var(--frost-white))',
-				'swedish-charcoal': 'hsl(var(--swedish-charcoal))',
+				'vibrant-orange': 'hsl(var(--vibrant-orange))',
+				'deep-orange': 'hsl(var(--deep-orange))',
+				'charcoal-black': 'hsl(var(--charcoal-black))',
+				'slate-grey': 'hsl(var(--slate-grey))',
+				'light-grey': 'hsl(var(--light-grey))',
+				'dark-grey': 'hsl(var(--dark-grey))',
+				'orange-glow': 'hsl(var(--orange-glow))',
+				'pure-white': 'hsl(var(--pure-white))',
+				'warm-orange': 'hsl(var(--warm-orange))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -81,8 +81,8 @@ export default {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-card': 'var(--gradient-card)',
-				'gradient-forest': 'var(--gradient-forest)',
-				'gradient-arctic': 'var(--gradient-arctic)'
+				'gradient-orange': 'var(--gradient-orange)',
+				'gradient-dark': 'var(--gradient-dark)'
 			},
 			boxShadow: {
 				'soft': 'var(--shadow-soft)',
