@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
-import heroAgricultureImage from "@/assets/hero-agriculture.jpg";
 
 const Hero = () => {
+  console.log("Hero component is rendering");
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-background pt-20">
       <div className="container mx-auto px-6">
@@ -64,31 +64,24 @@ const Hero = () => {
             </div>
           </div>
           
-          {/* Image Side */}
+          {/* Image Side - Simplified for testing */}
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-elegant">
-              <img 
-                src={heroAgricultureImage} 
-                alt="Advanced agricultural data analytics and monitoring systems in action"
-                className="w-full h-[600px] object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-tr from-vibrant-orange/20 via-transparent to-deep-orange/10"></div>
+            <div className="relative rounded-2xl overflow-hidden shadow-lg bg-gradient-to-br from-blue-500 to-green-500">
+              <div className="w-full h-[600px] flex items-center justify-center text-white text-2xl font-bold">
+                Agricultural Data Platform
+              </div>
               
               {/* Floating Stats Cards */}
               <div className="absolute top-6 right-6 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg">
-                <div className="text-2xl font-bold text-vibrant-orange">25%</div>
-                <div className="text-sm text-charcoal-black">Yield Increase</div>
+                <div className="text-2xl font-bold text-blue-600">25%</div>
+                <div className="text-sm text-gray-800">Yield Increase</div>
               </div>
               
               <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg">
-                <div className="text-2xl font-bold text-vibrant-orange">10M+</div>
-                <div className="text-sm text-charcoal-black">Acres Monitored</div>
+                <div className="text-2xl font-bold text-green-600">10M+</div>
+                <div className="text-sm text-gray-800">Acres Monitored</div>
               </div>
             </div>
-            
-            {/* Orange accent elements */}
-            <div className="absolute -top-4 -right-4 w-32 h-32 bg-gradient-hero rounded-full opacity-20 blur-2xl"></div>
-            <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-gradient-orange rounded-full opacity-15 blur-3xl"></div>
           </div>
         </div>
       </div>
