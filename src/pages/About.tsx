@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Card, CardContent } from "@/components/ui/card";
 
 const About = () => {
   return (
@@ -44,8 +45,76 @@ const About = () => {
           </div>
         </section>
 
-        {/* Values */}
+        {/* Founders Gallery */}
         <section className="py-20 bg-light-grey/30">
+          <div className="container mx-auto px-6">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center text-charcoal-black">
+                Meet Our Founders
+              </h2>
+              <p className="text-xl text-muted-foreground text-center mb-16 max-w-3xl mx-auto">
+                The visionary leaders who built our company from the ground up, bringing together decades of expertise in technology, agriculture, and forestry.
+              </p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {[
+                  {
+                    name: "Sarah Chen",
+                    title: "CEO & Co-Founder",
+                    description: "Agricultural data scientist with 15+ years in precision agriculture and machine learning.",
+                    initials: "SC",
+                    gradient: "bg-gradient-hero"
+                  },
+                  {
+                    name: "Michael Rodriguez",
+                    title: "CTO & Co-Founder", 
+                    description: "Full-stack engineer and systems architect specializing in large-scale data platforms.",
+                    initials: "MR",
+                    gradient: "bg-gradient-orange"
+                  },
+                  {
+                    name: "Dr. Emily Johnson",
+                    title: "Chief Science Officer & Co-Founder",
+                    description: "Forest ecology researcher and conservation expert with PhD from Stanford University.",
+                    initials: "EJ",
+                    gradient: "bg-gradient-hero"
+                  },
+                  {
+                    name: "David Park",
+                    title: "COO & Co-Founder",
+                    description: "Operations leader and business strategist with experience scaling tech companies.",
+                    initials: "DP",
+                    gradient: "bg-gradient-orange"
+                  }
+                ].map((founder, index) => (
+                  <Card key={index} className="group hover:shadow-medium transition-all duration-300 hover:-translate-y-2 bg-gradient-card border-0">
+                    <CardContent className="p-6 text-center">
+                      <div className="mb-6">
+                        <div className={`w-24 h-24 ${founder.gradient} rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                          <span className="text-2xl font-bold text-white">
+                            {founder.initials}
+                          </span>
+                        </div>
+                      </div>
+                      <h3 className="text-xl font-bold mb-2 text-charcoal-black">
+                        {founder.name}
+                      </h3>
+                      <p className="text-primary font-semibold mb-3">
+                        {founder.title}
+                      </p>
+                      <p className="text-muted-foreground text-sm leading-relaxed">
+                        {founder.description}
+                      </p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Values */}
+        <section className="py-20 bg-background">
           <div className="container mx-auto px-6">
             <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center text-charcoal-black">
               Our Values
