@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
-  console.log("Hero component is rendering");
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-background pt-20">
       <div className="container mx-auto px-6">
@@ -10,16 +9,16 @@ const Hero = () => {
           <div className="space-y-8 py-4">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-relaxed text-charcoal-black pb-2">
               <span className="block">
-                Data Intelligence for
+                Innovative Solutions for
               </span>
               <span className="block bg-gradient-hero bg-clip-text text-transparent mt-3 pb-1">
-                Agriculture & Forestry
+                Your Business
               </span>
             </h1>
             
             <p className="text-lg md:text-xl text-slate-grey leading-relaxed max-w-lg py-2">
-              Advanced analytics platform that aggregates data from agricultural and forestry operations, 
-              delivering actionable insights for sustainable growth and maximum productivity.
+              We deliver cutting-edge technology solutions and data-driven insights 
+              that help businesses grow, optimize operations, and achieve sustainable success.
             </p>
             
             {/* Feature Icons */}
@@ -68,18 +67,18 @@ const Hero = () => {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-lg bg-gradient-to-br from-blue-500 to-green-500">
               <div className="w-full h-[600px] flex items-center justify-center text-white text-2xl font-bold">
-                Agricultural Data Platform
+                Business Solutions Platform
               </div>
               
               {/* Floating Stats Cards */}
               <div className="absolute top-6 right-6 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg">
-                <div className="text-2xl font-bold text-blue-600">25%</div>
-                <div className="text-sm text-gray-800">Yield Increase</div>
+                <div className="text-2xl font-bold text-blue-600">300+</div>
+                <div className="text-sm text-gray-800">Projects Delivered</div>
               </div>
               
               <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg">
-                <div className="text-2xl font-bold text-green-600">10M+</div>
-                <div className="text-sm text-gray-800">Acres Monitored</div>
+                <div className="text-2xl font-bold text-green-600">99%</div>
+                <div className="text-sm text-gray-800">Client Satisfaction</div>
               </div>
             </div>
           </div>

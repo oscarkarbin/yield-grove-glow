@@ -1,24 +1,24 @@
 const Stats = () => {
   const stats = [
     {
-      number: "10M+",
-      label: "Acres Monitored",
-      description: "Agricultural and forestry land under management"
+      number: "300+",
+      label: "Projects Delivered",
+      description: "Successful implementations across various industries"
     },
     {
-      number: "25%",
-      label: "Average Yield Increase",
-      description: "Improvement in crop productivity for our clients"
+      number: "99%",
+      label: "Client Satisfaction",
+      description: "Exceptional service and support quality"
     },
     {
-      number: "500+",
-      label: "Data Sources",
-      description: "Integrated platforms and sensors"
+      number: "50+",
+      label: "Enterprise Clients",
+      description: "Trusted partnerships with leading organizations"
     },
     {
-      number: "99.9%",
-      label: "Uptime",
-      description: "Reliable, always-on data processing"
+      number: "24/7",
+      label: "Support Available",
+      description: "Round-the-clock technical assistance"
     }
   ];
 
@@ -27,10 +27,10 @@ const Stats = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Driving Results Across the Industry
+            Delivering Results for Our Clients
           </h2>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Trusted by leading agricultural and forestry operations worldwide
+            Trusted by leading organizations across multiple industries
           </p>
         </div>
         

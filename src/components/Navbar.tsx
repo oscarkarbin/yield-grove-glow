@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm shadow-soft">
@@ -10,31 +12,42 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="text-2xl font-bold text-primary font-digital">
+            <Link to="/" className="text-2xl font-bold text-primary font-digital">
               Yield
-            </div>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <a href="#features" className="text-dark-grey hover:text-primary transition-colors">
-                Features
-              </a>
-              <a href="#about" className="text-dark-grey hover:text-primary transition-colors">
+              <Link 
+                to="/" 
+                className={`transition-colors ${location.pathname === '/' ? 'text-primary' : 'text-dark-grey hover:text-primary'}`}
+              >
+                Home
+              </Link>
+              <Link 
+                to="/about" 
+                className={`transition-colors ${location.pathname === '/about' ? 'text-primary' : 'text-dark-grey hover:text-primary'}`}
+              >
                 About
-              </a>
-              <a href="#contact" className="text-dark-grey hover:text-primary transition-colors">
+              </Link>
+              <Link 
+                to="/contact" 
+                className={`transition-colors ${location.pathname === '/contact' ? 'text-primary' : 'text-dark-grey hover:text-primary'}`}
+              >
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
 
           {/* Desktop CTA */}
           <div className="hidden md:block">
-            <Button className="bg-gradient-hero hover:shadow-medium">
-              Get in touch
-            </Button>
+            <Link to="/contact">
+              <Button className="bg-gradient-hero hover:shadow-medium">
+                Get in touch
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -59,31 +72,33 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-white shadow-medium rounded-lg mt-2">
-              <a
-                href="#features"
-                className="block px-3 py-2 text-dark-grey hover:text-primary transition-colors"
+              <Link
+                to="/"
+                className={`block px-3 py-2 transition-colors ${location.pathname === '/' ? 'text-primary' : 'text-dark-grey hover:text-primary'}`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Features
-              </a>
-              <a
-                href="#about"
-                className="block px-3 py-2 text-dark-grey hover:text-primary transition-colors"
+                Home
+              </Link>
+              <Link
+                to="/about"
+                className={`block px-3 py-2 transition-colors ${location.pathname === '/about' ? 'text-primary' : 'text-dark-grey hover:text-primary'}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
-              </a>
-              <a
-                href="#contact"
-                className="block px-3 py-2 text-dark-grey hover:text-primary transition-colors"
+              </Link>
+              <Link
+                to="/contact"
+                className={`block px-3 py-2 transition-colors ${location.pathname === '/contact' ? 'text-primary' : 'text-dark-grey hover:text-primary'}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact
-              </a>
+              </Link>
               <div className="pt-2 border-t border-border">
-                <Button className="w-full bg-gradient-hero">
-                  Get in touch
-                </Button>
+                <Link to="/contact" className="block" onClick={() => setIsMenuOpen(false)}>
+                  <Button className="w-full bg-gradient-hero">
+                    Get in touch
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
