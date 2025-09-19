@@ -56,7 +56,7 @@ const About = () => {
                 The talented team from Chalmers University bringing together expertise in systems engineering, AI, robotics, and computer science.
               </p>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {[
                   {
                     name: "Oscar Karbin",
@@ -66,32 +66,25 @@ const About = () => {
                     gradient: "bg-gradient-hero"
                   },
                   {
-                    name: "Hubert Hermodsson",
-                    title: "Lead Mechanical Systems Engineer", 
-                    description: "MSc Systems, Control and Mechatronics Student at Chalmers.",
-                    initials: "HH",
-                    gradient: "bg-gradient-orange"
-                  },
-                  {
                     name: "Jacob Norgren",
                     title: "DevOps Lead",
                     description: "MSc High-Performance Computer Systems Student at Chalmers.",
                     initials: "JN",
-                    gradient: "bg-gradient-hero"
+                    gradient: "bg-gradient-orange"
                   },
                   {
                     name: "Johan Baumann",
                     title: "Lead AI Systems Engineer",
                     description: "MSc Systems, Control and Mechatronics Student at Chalmers.",
                     initials: "JB",
-                    gradient: "bg-gradient-orange"
+                    gradient: "bg-gradient-hero"
                   },
                   {
                     name: "Oscar Morisbak Olsson",
                     title: "Head of Robotic Connectivity",
                     description: "MSc Computer Systems and Cybersecurity Student at Chalmers.",
                     initials: "OM",
-                    gradient: "bg-gradient-hero"
+                    gradient: "bg-gradient-orange"
                   }
                 ].map((founder, index) => (
                   <Card key={index} className="group hover:shadow-medium transition-all duration-300 hover:-translate-y-2 bg-gradient-card border-0">
