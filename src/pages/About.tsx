@@ -1,6 +1,8 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import johanBaumannPhoto from "@/assets/johan-baumann.jpg";
 
 const About = () => {
   return (
@@ -77,7 +79,8 @@ const About = () => {
                     title: "Lead AI Systems Engineer",
                     description: "MSc Systems, Control and Mechatronics Student at Chalmers.",
                     initials: "JB",
-                    gradient: "bg-gradient-hero"
+                    gradient: "bg-gradient-hero",
+                    photo: johanBaumannPhoto
                   },
                   {
                     name: "Oscar Morisbak Olsson",
@@ -90,11 +93,20 @@ const About = () => {
                   <Card key={index} className="group hover:shadow-medium transition-all duration-300 hover:-translate-y-2 bg-gradient-card border-0">
                     <CardContent className="p-6 text-center">
                       <div className="mb-6">
-                        <div className={`w-24 h-24 ${founder.gradient} rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                          <span className="text-2xl font-bold text-white">
-                            {founder.initials}
-                          </span>
-                        </div>
+                        {founder.photo ? (
+                          <Avatar className="w-24 h-24 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <AvatarImage src={founder.photo} alt={founder.name} />
+                            <AvatarFallback className={`${founder.gradient} text-2xl font-bold text-white`}>
+                              {founder.initials}
+                            </AvatarFallback>
+                          </Avatar>
+                        ) : (
+                          <div className={`w-24 h-24 ${founder.gradient} rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                            <span className="text-2xl font-bold text-white">
+                              {founder.initials}
+                            </span>
+                          </div>
+                        )}
                       </div>
                       <h3 className="text-xl font-bold mb-2 text-charcoal-black">
                         {founder.name}
