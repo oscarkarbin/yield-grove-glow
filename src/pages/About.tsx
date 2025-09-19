@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import johanBaumannPhoto from "@/assets/johan-baumann.jpg";
+import jacobNorgrenPhoto from "@/assets/jacob-norgren.jpg";
 
 const About = () => {
   return (
@@ -72,7 +73,8 @@ const About = () => {
                     title: "DevOps Lead",
                     description: "MSc High-Performance Computer Systems Student at Chalmers.",
                     initials: "JN",
-                    gradient: "bg-gradient-orange"
+                    gradient: "bg-gradient-orange",
+                    photo: jacobNorgrenPhoto
                   },
                   {
                     name: "Johan Baumann",
