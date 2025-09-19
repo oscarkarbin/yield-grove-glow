@@ -53,38 +53,45 @@ const About = () => {
                 Meet Our Founders
               </h2>
               <p className="text-xl text-muted-foreground text-center mb-16 max-w-3xl mx-auto">
-                The visionary leaders who built our company from the ground up, bringing together decades of expertise in technology, agriculture, and forestry.
+                The talented team from Chalmers University bringing together expertise in systems engineering, AI, robotics, and computer science.
               </p>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
                 {[
                   {
-                    name: "Sarah Chen",
-                    title: "CEO & Co-Founder",
-                    description: "Agricultural data scientist with 15+ years in precision agriculture and machine learning.",
-                    initials: "SC",
+                    name: "Oscar Karbin",
+                    title: "CEO",
+                    description: "MSc Computer Science – Algorithms, Languages and Logic Student at Chalmers.",
+                    initials: "OK",
                     gradient: "bg-gradient-hero"
                   },
                   {
-                    name: "Michael Rodriguez",
-                    title: "CTO & Co-Founder", 
-                    description: "Full-stack engineer and systems architect specializing in large-scale data platforms.",
-                    initials: "MR",
+                    name: "Hubert Hermodsson",
+                    title: "Lead Mechanical Systems Engineer", 
+                    description: "MSc Systems, Control and Mechatronics Student at Chalmers.",
+                    initials: "HH",
                     gradient: "bg-gradient-orange"
                   },
                   {
-                    name: "Dr. Emily Johnson",
-                    title: "Chief Science Officer & Co-Founder",
-                    description: "Forest ecology researcher and conservation expert with PhD from Stanford University.",
-                    initials: "EJ",
+                    name: "Jacob Norgren",
+                    title: "DevOps Lead",
+                    description: "MSc High-Performance Computer Systems Student at Chalmers.",
+                    initials: "JN",
                     gradient: "bg-gradient-hero"
                   },
                   {
-                    name: "David Park",
-                    title: "COO & Co-Founder",
-                    description: "Operations leader and business strategist with experience scaling tech companies.",
-                    initials: "DP",
+                    name: "Johan Baumann",
+                    title: "Lead AI Systems Engineer",
+                    description: "MSc Systems, Control and Mechatronics Student at Chalmers.",
+                    initials: "JB",
                     gradient: "bg-gradient-orange"
+                  },
+                  {
+                    name: "Oscar Morisbak Olsson",
+                    title: "Head of Robotic Connectivity",
+                    description: "MSc Computer Systems and Cybersecurity Student at Chalmers.",
+                    initials: "OM",
+                    gradient: "bg-gradient-hero"
                   }
                 ].map((founder, index) => (
                   <Card key={index} className="group hover:shadow-medium transition-all duration-300 hover:-translate-y-2 bg-gradient-card border-0">

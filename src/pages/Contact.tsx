@@ -101,7 +101,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-charcoal-black">Email</h3>
-                      <p className="text-muted-foreground">hello@yourcompany.com</p>
+                      <p className="text-muted-foreground">info@yieldrobotics.se</p>
                     </div>
                   </div>
 
@@ -127,9 +127,9 @@ const Contact = () => {
                     <div>
                       <h3 className="text-lg font-semibold text-charcoal-black">Office</h3>
                       <p className="text-muted-foreground">
-                        123 Business Street<br />
-                        Suite 100<br />
-                        City, State 12345
+                        YIELD Robotics AB<br />
+                        Eklandagatan 41B<br />
+                        412 61 Gothenburg, Sweden
                       </p>
                     </div>
                   </div>
